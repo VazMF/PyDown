@@ -3,8 +3,7 @@ import re
 import moviepy.editor as mp
 
 
-def converter(mp4):
-    folder = "/home/vaz_mf/Música"
+def converter(mp4, folder):
     for file in os.listdir(folder):
         if re.search('mp4', file):
             mp4_path = os.path.join(folder, file)
